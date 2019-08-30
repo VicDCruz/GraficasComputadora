@@ -159,7 +159,7 @@ struct Employee* deleteEmployee(struct Employee* actual, struct Employee* main) 
 	cout << "ELIMINAR # INE (7 Digitos): ";
 	cin >> emp.ine;
 	struct Employee* right = NULL;
-	struct Employee* left = actual;
+	struct Employee* left = actual; 
 	while (left != NULL) {
 		if (strcmp(left->ine, emp.ine) == 0) {
 			if (left == main) {
